@@ -9,11 +9,17 @@ from streamlit_folium import st_folium
 # Title
 st.title("✈️ Pakistan Flight Tracker Dashboard")
 
-# API call
+# API call with timeout + error handling
 url = "https://opensky-network.org/api/states/all"
-response = requests.get(url)
-data = response.json()
-states = data["states"]
+states = []
+try:
+    response = requests.get(url, timeout=10)  # max 10 seconds wait
+    data = response.json()
+    states = data.get("states", [])
+except requests.exceptions.ConnectTimeout:
+    st.error("⚠️ API connection timed out. Please try again later.")
+except Exception as e:
+    st.error(f"⚠️ Error fetching data: {e}")
 
 # Pakistan ke lat/lon range
 min_lat, max_lat = 23, 37
