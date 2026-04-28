@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1c5055b37972ad62ef6df59474d80de7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1c5055b37972ad62ef6df59474d80de7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1c5055b37972ad62ef6df59474d80de7 = L.map(
+                "map_1c5055b37972ad62ef6df59474d80de7",
+                {
+                    center: [30.3753, 69.3451],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8c338c0db1d0867d199ceeaba3adcb6d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8c338c0db1d0867d199ceeaba3adcb6d.addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+            var marker_a2bd98436e06029c3a67009eb57e3a7c = L.marker(
+                [29.4789, 75.9901],
+                {
+}
+            ).addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+        var popup_4b84ded8415793248c01c8a1c2e2c18e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3adf3e88d87c1661b9d09916870fb197 = $(`<div id="html_3adf3e88d87c1661b9d09916870fb197" style="width: 100.0%; height: 100.0%;">Flight: AXB605D </div>`)[0];
+                popup_4b84ded8415793248c01c8a1c2e2c18e.setContent(html_3adf3e88d87c1661b9d09916870fb197);
+            
+        
+
+        marker_a2bd98436e06029c3a67009eb57e3a7c.bindPopup(popup_4b84ded8415793248c01c8a1c2e2c18e)
+        ;
+
+        
+    
+    
+            var marker_c92b380a69c60ff25c7037d1dff9daa2 = L.marker(
+                [28.1153, 76.5009],
+                {
+}
+            ).addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+        var popup_418d455859b8928c0ea003eaf71d17f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e19a0a867dda27039db4826e306191f = $(`<div id="html_9e19a0a867dda27039db4826e306191f" style="width: 100.0%; height: 100.0%;">Flight: IGO833W </div>`)[0];
+                popup_418d455859b8928c0ea003eaf71d17f8.setContent(html_9e19a0a867dda27039db4826e306191f);
+            
+        
+
+        marker_c92b380a69c60ff25c7037d1dff9daa2.bindPopup(popup_418d455859b8928c0ea003eaf71d17f8)
+        ;
+
+        
+    
+    
+            var marker_dd7e4b6c6d71bc14965ee169e56dcdbd = L.marker(
+                [29.7887, 70.9294],
+                {
+}
+            ).addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+        var popup_557c3006caee6452a0295957e5c1b154 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e300466a9dc05e46ee45e73d424c717 = $(`<div id="html_7e300466a9dc05e46ee45e73d424c717" style="width: 100.0%; height: 100.0%;">Flight: </div>`)[0];
+                popup_557c3006caee6452a0295957e5c1b154.setContent(html_7e300466a9dc05e46ee45e73d424c717);
+            
+        
+
+        marker_dd7e4b6c6d71bc14965ee169e56dcdbd.bindPopup(popup_557c3006caee6452a0295957e5c1b154)
+        ;
+
+        
+    
+    
+            var marker_6638ccd1026ebd79ef0dff0440ae351b = L.marker(
+                [32.8456, 74.7126],
+                {
+}
+            ).addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+        var popup_59c34d0707ceb1a8aa8990d8003edc2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fbd8fbfb6bdc8ef01cd6f793a5842f5 = $(`<div id="html_7fbd8fbfb6bdc8ef01cd6f793a5842f5" style="width: 100.0%; height: 100.0%;">Flight: CAL075  </div>`)[0];
+                popup_59c34d0707ceb1a8aa8990d8003edc2a.setContent(html_7fbd8fbfb6bdc8ef01cd6f793a5842f5);
+            
+        
+
+        marker_6638ccd1026ebd79ef0dff0440ae351b.bindPopup(popup_59c34d0707ceb1a8aa8990d8003edc2a)
+        ;
+
+        
+    
+    
+            var marker_d3129010b3de309623628d1c0320e270 = L.marker(
+                [30.4252, 74.1709],
+                {
+}
+            ).addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+        var popup_cb827eb3e8c2969ef40f3ae9d2553af1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f123311ae35a7dd17ab1e45958936425 = $(`<div id="html_f123311ae35a7dd17ab1e45958936425" style="width: 100.0%; height: 100.0%;">Flight: QTR50E  </div>`)[0];
+                popup_cb827eb3e8c2969ef40f3ae9d2553af1.setContent(html_f123311ae35a7dd17ab1e45958936425);
+            
+        
+
+        marker_d3129010b3de309623628d1c0320e270.bindPopup(popup_cb827eb3e8c2969ef40f3ae9d2553af1)
+        ;
+
+        
+    
+    
+            var marker_da88099e53c43099a46902fe88127560 = L.marker(
+                [29.6084, 75.1775],
+                {
+}
+            ).addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+        var popup_c375352cbc924b6800f02de42d6104bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f285e4703893dfdc5534aa02c16fe23c = $(`<div id="html_f285e4703893dfdc5534aa02c16fe23c" style="width: 100.0%; height: 100.0%;">Flight: IGO245C </div>`)[0];
+                popup_c375352cbc924b6800f02de42d6104bf.setContent(html_f285e4703893dfdc5534aa02c16fe23c);
+            
+        
+
+        marker_da88099e53c43099a46902fe88127560.bindPopup(popup_c375352cbc924b6800f02de42d6104bf)
+        ;
+
+        
+    
+    
+            var marker_15619014e53c43f729409df0a99f17d3 = L.marker(
+                [25.764, 75.2953],
+                {
+}
+            ).addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+        var popup_bb5367e8e81403a9d0e756db8a78f4d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d89dbb6674e59d07c64213a6c48c01e6 = $(`<div id="html_d89dbb6674e59d07c64213a6c48c01e6" style="width: 100.0%; height: 100.0%;">Flight: IGO083  </div>`)[0];
+                popup_bb5367e8e81403a9d0e756db8a78f4d8.setContent(html_d89dbb6674e59d07c64213a6c48c01e6);
+            
+        
+
+        marker_15619014e53c43f729409df0a99f17d3.bindPopup(popup_bb5367e8e81403a9d0e756db8a78f4d8)
+        ;
+
+        
+    
+    
+            var marker_ef21d1e2471f0404ce3f34f9e6b97ff9 = L.marker(
+                [26.3795, 74.6952],
+                {
+}
+            ).addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+        var popup_38eb4e28a71626d6363f9e635de32e3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5afccea6c6d1152e8433e269ddda73ce = $(`<div id="html_5afccea6c6d1152e8433e269ddda73ce" style="width: 100.0%; height: 100.0%;">Flight: IGO242  </div>`)[0];
+                popup_38eb4e28a71626d6363f9e635de32e3a.setContent(html_5afccea6c6d1152e8433e269ddda73ce);
+            
+        
+
+        marker_ef21d1e2471f0404ce3f34f9e6b97ff9.bindPopup(popup_38eb4e28a71626d6363f9e635de32e3a)
+        ;
+
+        
+    
+    
+            var marker_6a8b82754e83a0d3ab73966c987c0d13 = L.marker(
+                [26.6915, 75.4787],
+                {
+}
+            ).addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+        var popup_b2f4fb3d4b2b47daf2716e091aa663a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b5a47ce02235019acd8feab9277e9b2 = $(`<div id="html_2b5a47ce02235019acd8feab9277e9b2" style="width: 100.0%; height: 100.0%;">Flight: SIA366  </div>`)[0];
+                popup_b2f4fb3d4b2b47daf2716e091aa663a5.setContent(html_2b5a47ce02235019acd8feab9277e9b2);
+            
+        
+
+        marker_6a8b82754e83a0d3ab73966c987c0d13.bindPopup(popup_b2f4fb3d4b2b47daf2716e091aa663a5)
+        ;
+
+        
+    
+    
+            var marker_7fbe1c970882e443dc05512bd4636176 = L.marker(
+                [31.2951, 72.5331],
+                {
+}
+            ).addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+        var popup_b3671b5c91b6113b9e8446aa625721b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f55ab5b12890e02ed9e789f1a3008745 = $(`<div id="html_f55ab5b12890e02ed9e789f1a3008745" style="width: 100.0%; height: 100.0%;">Flight: TUA531  </div>`)[0];
+                popup_b3671b5c91b6113b9e8446aa625721b9.setContent(html_f55ab5b12890e02ed9e789f1a3008745);
+            
+        
+
+        marker_7fbe1c970882e443dc05512bd4636176.bindPopup(popup_b3671b5c91b6113b9e8446aa625721b9)
+        ;
+
+        
+    
+    
+            var marker_7125d9e076176ad144ea923d00349ce0 = L.marker(
+                [32.8456, 74.7127],
+                {
+}
+            ).addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+        var popup_7bb2454f4413018dc0cd854166599796 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_804639e4ba7570723f626bce79173526 = $(`<div id="html_804639e4ba7570723f626bce79173526" style="width: 100.0%; height: 100.0%;">Flight: UZB535  </div>`)[0];
+                popup_7bb2454f4413018dc0cd854166599796.setContent(html_804639e4ba7570723f626bce79173526);
+            
+        
+
+        marker_7125d9e076176ad144ea923d00349ce0.bindPopup(popup_7bb2454f4413018dc0cd854166599796)
+        ;
+
+        
+    
+    
+            var marker_ae873a27d5c1614d5f54e4e045a8f727 = L.marker(
+                [27.2901, 76.0111],
+                {
+}
+            ).addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+        var popup_aa7f60fd4e42157620ffc10de61672d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb06e12ac72884d354645663f2777f0a = $(`<div id="html_cb06e12ac72884d354645663f2777f0a" style="width: 100.0%; height: 100.0%;">Flight: BDA102  </div>`)[0];
+                popup_aa7f60fd4e42157620ffc10de61672d6.setContent(html_cb06e12ac72884d354645663f2777f0a);
+            
+        
+
+        marker_ae873a27d5c1614d5f54e4e045a8f727.bindPopup(popup_aa7f60fd4e42157620ffc10de61672d6)
+        ;
+
+        
+    
+    
+            var marker_8509aad314257a210c920368aadf015a = L.marker(
+                [25.7351, 74.8485],
+                {
+}
+            ).addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+        var popup_0c01a90324bcf1518973c63a73ac903f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea0f2506e9cdcad23bac60733de6796c = $(`<div id="html_ea0f2506e9cdcad23bac60733de6796c" style="width: 100.0%; height: 100.0%;">Flight: SEJ164  </div>`)[0];
+                popup_0c01a90324bcf1518973c63a73ac903f.setContent(html_ea0f2506e9cdcad23bac60733de6796c);
+            
+        
+
+        marker_8509aad314257a210c920368aadf015a.bindPopup(popup_0c01a90324bcf1518973c63a73ac903f)
+        ;
+
+        
+    
+    
+            var marker_133edbac18f5454a749e7e9f6d3342a0 = L.marker(
+                [31.8788, 70.0182],
+                {
+}
+            ).addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+        var popup_35028aad691c18b58f07ad1ed103afbc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8f1c36abf098aa17a5c8a2142a85704 = $(`<div id="html_d8f1c36abf098aa17a5c8a2142a85704" style="width: 100.0%; height: 100.0%;">Flight: SVA727  </div>`)[0];
+                popup_35028aad691c18b58f07ad1ed103afbc.setContent(html_d8f1c36abf098aa17a5c8a2142a85704);
+            
+        
+
+        marker_133edbac18f5454a749e7e9f6d3342a0.bindPopup(popup_35028aad691c18b58f07ad1ed103afbc)
+        ;
+
+        
+    
+    
+            var marker_1ba593e077467d7dab83a85fadfe48b6 = L.marker(
+                [26.8279, 76.1873],
+                {
+}
+            ).addTo(map_1c5055b37972ad62ef6df59474d80de7);
+        
+    
+        var popup_3d521a3f43568e0d9e4270fe97cfb92f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b4e456747495f23dcafe98ff4815348 = $(`<div id="html_7b4e456747495f23dcafe98ff4815348" style="width: 100.0%; height: 100.0%;">Flight: AXB1230 </div>`)[0];
+                popup_3d521a3f43568e0d9e4270fe97cfb92f.setContent(html_7b4e456747495f23dcafe98ff4815348);
+            
+        
+
+        marker_1ba593e077467d7dab83a85fadfe48b6.bindPopup(popup_3d521a3f43568e0d9e4270fe97cfb92f)
+        ;
+
+        
+    
+</script>
+</html>
